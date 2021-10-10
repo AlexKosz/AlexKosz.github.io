@@ -1,0 +1,174 @@
+@media screen and (max-width: 1200px) {
+	.item-image {
+		.item-overlay-tech,
+		.item-overlay-list {
+			display: none !important;
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.pad-sm {
+		margin-top: 20px;
+	}
+}
+
+// iPhone 5/SE
+@media screen and (device-aspect-ratio: 40/71) {
+	.item-image {
+		.item-overlay-desc {
+			font-size: 0.8rem !important;
+		}
+
+		.item-btn {
+			padding: 8px 10px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	.navbar-light {
+		.navbar-nav {
+			.nav-link {
+				width: max-content;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.header {
+		.header-title {
+			text-align: center;
+			font-size: 5.7rem;
+		}
+
+		.header-subtitle {
+			text-align: center;
+		}
+	}
+
+	.about-section {
+		p {
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.common-heading {
+		text-align: center;
+
+		h2,
+		h4,
+		span,
+		.image-block {
+			text-align: center;
+		}
+	}
+
+	.pad-tb {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.tech-block {
+		padding: 50px 15px;
+	}
+
+	.follow-label {
+		display: block;
+		text-align: center;
+
+		h6 {
+			margin: 0;
+			text-align: center;
+			margin-bottom: 20px;
+
+			&::after {
+				content: '';
+				width: 0;
+			}
+		}
+
+		i {
+			font-size: 1.6rem;
+			margin: 0 auto;
+			margin-left: 8px;
+			margin-right: 8px;
+			margin-bottom: 25px;
+		}
+	}
+
+	::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: $dark-blue;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.item-image {
+		.item-overlay {
+			padding: 15px 25px;
+		}
+
+		.item-overlay-desc {
+			margin-top: 0;
+		}
+
+		.item-overlay-desc {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+
+	.item-btn {
+		padding: 8px 20px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.header {
+		.header-title {
+			font-size: 4.5rem;
+			margin-top: 60px;
+		}
+	}
+
+	.pad-sm {
+		margin-top: 20px;
+	}
+
+	.main-btns {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		row-gap: 20px;
+	}
+
+	.item-image {
+		.item-overlay-desc {
+			font-size: 0.85rem;
+			font-weight: 500;
+		}
+
+		.item-overlay {
+			padding: 15px 2px;
+		}
+
+		.item-btn {
+			font-size: 0.85rem;
+			padding: 8px 20px;
+		}
+	}
+
+	.item-btn-grid {
+		column-gap: 5px;
+	}
+}

@@ -1,0 +1,26 @@
+@keyframes arrowanim {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(8px, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
