@@ -1,3 +1,1 @@
-# My Web Developer Portfolio
-
-Built using HTML/CSS & JavaScript.
+# My Full Stack Developer Portfolio
