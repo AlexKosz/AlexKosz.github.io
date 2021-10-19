@@ -598,9 +598,7 @@ span.circle {
 
 	font-weight: 500;
 }
-.item-overlay-list li {
 
-}
 .item-overlay-list li::before {
 	content: '•';
 	position: relative;
