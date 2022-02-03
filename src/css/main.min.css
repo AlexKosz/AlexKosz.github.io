@@ -95,9 +95,9 @@ html .mt-60 {
 	background: #fb5496;
 }
 ::-webkit-scrollbar-thumb {
-	background-image: -webkit-linear-gradient(45deg, #0FC, #028);
-	background-image: -o-linear-gradient(45deg, #0fc, #028);
-	background-image: linear-gradient(45deg, #0fc, #028);
+	background-image: -webkit-linear-gradient(45deg, #82B6B6, #028);
+	background-image: -o-linear-gradient(45deg, #82B6B6, #028);
+	background-image: linear-gradient(45deg, #82B6B6, #028);
 }
 ::-moz-selection {
 	background: rgba(166, 175, 189, 0.3);
@@ -320,7 +320,7 @@ ul {
 	height: 100vh;
 	top: 0;
 	left: 0;
-	background: url('../img/hero-shape.svg'), #bff;
+	background: url('../img/hero-shape.svg'), #74A5A5;
 	background-position: center center, center center;
 	background-size: cover, cover;
 	background-repeat: no-repeat, no-repeat;
@@ -364,11 +364,11 @@ ul {
 	font-size: 0.85rem;
 }
 .btn-lg {
-	background: linear-gradient(to right, #0fc 0, #028 100%);
+	background: linear-gradient(to right, #82B6B6 0, #028 100%);
 	box-shadow: 0 10px 15px 0 rgba(56, 0, 189, 0.2);
 }
 .btn-lg-2 {
-	background: linear-gradient(to right, #0fc 0, #028 100%);
+	background: linear-gradient(to right, #82B6B6 0, #028 100%);
 	box-shadow: 0 10px 15px 0 rgba(56, 0, 189, 0.2);
 }
 .my-projects-btn i {
@@ -457,8 +457,8 @@ span.circle {
 	width: 0%;
 	bottom: 0;
 	height: 4px;
-	background: -webkit-linear-gradient(-45deg, #0fc 0, #028 54%, #0fc 100%);
-	background: linear-gradient(135deg, #0fc 0, #028 54%, #0fc 100%);
+	background: -webkit-linear-gradient(-45deg, #82B6B6 0, #028 54%, #0fc 100%);
+	background: linear-gradient(135deg, #82B6B6 0, #028 54%, #0fc 100%);
 }
 .card-set {
 	position: relative;
