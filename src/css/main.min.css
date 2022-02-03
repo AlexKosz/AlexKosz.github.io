@@ -173,7 +173,7 @@ ul {
 	list-style: none;
 }
 .bg-gradient-3 {
-	background: linear-gradient(to bottom, #afe 0, #fff 100%);
+	background: linear-gradient(to bottom, #82B6B6 0, #fff 100%);
 }
 .preloader {
 	display: grid;
