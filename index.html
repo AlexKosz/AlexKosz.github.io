@@ -1,381 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-
-	<link rel="shortcut icon" type="image/png" href="./src/img/favicon.ico" />
-
-
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-
-
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet" />
-
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-
-
-	<link rel="stylesheet" href="./src/css/main.min.css" />
-
-
-	<title>Alexander's Portfolio</title>
-</head>
-
-<body>
-
-	<div class="preloader">
-	</div>
-
-	<div class="mobile__menu--overlay invisible"></div>
-
-
-	<header class="top-header">
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Alex Koszuta | Web Developer</title>
+		<meta
+			name="description"
+			content="Professional portfolio of Alexander Koszuta, showcasing web development projects and skills."
+		/>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<!-- Font Awesome for icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			href="assets/logo.png"
+		/>
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header class="header">
 			<div class="container">
-
-				<a href="#" class="navbar-brand">
-
-
-					<img src="https://fontmeme.com/permalink/211010/f5ac0fe32dfd9e2aa6a1d621506a167e.png"
-						alt="fancy-fonts" border="0">
-				</a>
-
-
-				<button class="navbar-toggler" type="button" aria-controls="navbarToggle" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<i class="fas fa-bars mobile__menu--icon"></i>
-				</button>
-
-				<div class="collapse navbar-collapse animate" id="navbarToggle">
-					<ul class="navbar-nav ms-auto">
-
-						<li class="nav-item">
-							<a href="#about" class="nav-link hor-rule">About</a>
-						</li>
-
-
-						<li class="nav-item">
-							<a href="#projects" class="nav-link hor-rule">Projects</a>
-						</li>
-
-						<li class="nav-item">
-							<a href="#contact" class="nav-link">Contact</a>
-						</li>
-
-						<li class="nav-item">
-							<a href="https://drive.google.com/file/d/14GwB14ar8Gq2veRQx4SZV53N9bKTVnKe/view?usp=sharing"
-								class="btn-main btn-lg nav-link lnk custom-btn" target="_blank">
-								Resume
-								<span class="circle"></span>
-							</a>
-						</li>
+				<nav class="navbar">
+					<img
+						src="assets/logo.png"
+						alt="Web developer illustration"
+					/>
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</div>
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</nav>
 			</div>
-		</nav>
-	</header>
+		</header>
 
-
-	<div id="mobile-menu" class="mobile__menu">
-		<div class="mobile__menu--container">
-			<ul class="mobile__menu--links d-grid">
-				<a href="#">
-					<li class="link-item mobile__menu--title">Home</li>
-				</a>
-				<a href="#about">
-					<li class="link-item text-white">About</li>
-				</a>
-				<a href="#projects">
-					<li class="link-item text-white">Projects</li>
-				</a>
-				<a href="#contact">
-					<li class="link-item text-white">Contact</li>
-				</a>
-				<a href="https://drive.google.com/file/d/14GwB14ar8Gq2veRQx4SZV53N9bKTVnKe/view?usp=sharing">
-					<li class="link-item mobile__menu--download">Resume</li>
-				</a>
-			</ul>
-		</div>
-	</div>
-
-	<section id="hero" class="hero-bg hero-section">
-		<div class="container">
-
-			<div class="header v-center d-grid">
-				<h4 class="header-title">Hey, I'm Alex!</h4>
-				<h3 class="header-subtitle">I use modern technologies to build web apps and responsive websites.</h3>
-				<h5 class="header-subtitle">Check out my work below and reach out to me so we can work together!</h5>
-			</div>
-
-			<div class="d-grid main-btns">
-
-				<a href="#projects" class="btn-main btn-lg ml-10 mr-10 lnk my-projects-btn">
-					My Work
-					<i class="fas fa-chevron-right fa-icon"></i>
-					<span class="circle"></span>
-				</a>
-
-				<a href="#contact" class="btn-main btn-lg-2 ml-10 mr-10 lnk">
-					Contact me
-					<i class="fas fa-comment"></i>
-					<span class="circle"></span>
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<section id="about" class="about-section pad-tb">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-6">
-					<h4 class="common-heading mb-20">About Me</h4>
-					<p>
-						My name is Alexander Koszuta and I love technology. From a young age I was drawn to
-						computers and was fascinated by how they work.
-						After high school I chose to go into my current career (mechanical design) for personal reasons
-						involving my family and now I am looking to switch careers and join the world of development to
-						follow my passion!
-						I am a Full-Stack Developer, but my specialty is the Front-End, especially React.
-					</p>
-					<div class="follow-label mt-30">
-						<a href="https://github.com/AlexKosz" target="_blank"><i class="fab fa-github"></i></a>
-						<a href="https://www.linkedin.com/in/alex-koszuta-z43/" target="_blank"><i
-								class="fab fa-linkedin"></i></a>
+		<!-- Main Content -->
+		<main>
+			<!-- Hero Section -->
+			<section
+				id="hero"
+				class="hero"
+			>
+				<div class="container">
+					<div class="hero-wrapper">
+						<div class="hero-content">
+							<h1>Hi, I'm <span>Alexander Koszuta</span></h1>
+							<h2>Web Developer</h2>
+							<p>
+								I build exceptional digital experiences that make an impact.
+							</p>
+							<div class="hero-buttons">
+								<a
+									href="#projects"
+									class="btn"
+									>View My Work</a
+								>
+								<a
+									href="#contact"
+									class="btn btn-secondary"
+									>Contact Me</a
+								>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="tech-block border-anim overflow-hidden">
-						<div class="card-set">
-							<div class="tech-icon">
-								<img src="./src/img/tech.svg" class="img-fluid" alt="tech-img"
-									srcset="./src/img/tech.svg" />
-							</div>
-							<h4>My Languages</h4>
-							<ul class="tech-list mt-15">
-								<li>HTML/CSS</li>
-								<li>JavaScript</li>
+			</section>
+
+			<!-- About Section -->
+			<section
+				id="about"
+				class="about section"
+			>
+				<div class="container">
+					<h2 class="section-title">About Me</h2>
+					<div class="about-content">
+						<div class="about-text">
+							<p>
+								I'm a full-stack web developer with 3 years of experience
+								building modern, responsive websites and applications. I
+								specialize in the MERN stack, but I thrive in adaptable
+								environments and love learning new technologies.
+							</p>
+							<p>
+								What drives me is
+								<strong>human-aware development</strong>—creating tools that
+								enhance productivity while supporting mental well-being and
+								authentic connection. I believe technology should serve life,
+								not dominate it.
+							</p>
+							<p>
+								When I'm not coding, you'll find me gaming or writing
+								fiction—passions that keep me rooted in human stories and remind
+								me <em>why </em> we build.
+							</p>
+						</div>
+
+						<div class="about-image">
+							<img
+								src="/assets/AboutMeArt.png"
+								alt="about me illustration"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills Section -->
+			<section
+				id="skills"
+				class="skills section"
+			>
+				<div class="container">
+					<h2 class="section-title">My Skills</h2>
+					<div class="skills-grid">
+						<div class="skill-category">
+							<h3>Front-end</h3>
+							<ul>
+								<li>HTML5</li>
+								<li>CSS3/Sass</li>
+								<li>JavaScript (ES6+)</li>
+								<li>React.js</li>
+								<li>Redux</li>
+								<li>Material-UI (MUI)</li>
+								<li>Responsive Design</li>
+							</ul>
+						</div>
+						<div class="skill-category">
+							<h3>Back-end</h3>
+							<ul>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>MongoDB</li>
 								<li>Python</li>
-								<li>Java</li>
+								<li>Django</li>
+								<li>PostgreSQL</li>
+							</ul>
+						</div>
+						<div class="skill-category">
+							<h3>Tools & More</h3>
+							<ul>
+								<li>Git/GitHub</li>
+								<li>Agile Development</li>
+								<li>Figma</li>
+								<li>AWS</li>
+								<li>Automated Testing (Jest & Cypress)</li>
+								<li>JWT</li>
+								<li>Jira & Confluence</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 pad-sm">
-					<div class="tech-block border-anim overflow-hidden">
-						<div class="card-set">
-							<div class="tech-icon">
-								<img src="./src/img/design.svg" class="img-fluid" alt="tech-img"
-									srcset="./src/img/design.svg" />
+			</section>
+
+			<!-- Projects Section -->
+			<section
+				id="projects"
+				class="projects section"
+			>
+				<div class="container">
+					<h2 class="section-title">Personal Projects</h2>
+					<h3>Recent (2025)</h3>
+					<div class="projects-grid">
+						<div class="project-card">
+							<img
+								src="assets/projects/specView.png"
+								alt="screenshot of spec View project"
+							/>
+							<div class="project-info">
+								<h3>SpecView</h3>
+								<p>
+									A MERN app that lets users upload, view, search, and share
+									Jest test result JSON files through a simple, searchable
+									interface. (Deployed on AWS)
+								</p>
+								<div class="project-links">
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://specView.koszuta.dev"
+										class="btn"
+										>Live Demo</a
+									>
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://github.com/AlexKosz/SpecViewClient"
+										class="btn"
+										>Client Code</a
+									>
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://github.com/AlexKosz/SpecViewServer"
+										class="btn"
+										>Server Code</a
+									>
+								</div>
 							</div>
-							<h4>My Frameworks</h4>
-							<ul class="tech-list mt-15">
-								<li>React</li>
-								<li>Flask</li>
-								<li>Spring Boot</li>
-								<li>Bootstrap</li>
+						</div>
+					</div>
+					<hr />
+
+					<h3>Older ( > 2 years ago)</h3>
+					<div class="projects-grid">
+						<div class="project-card">
+							<img
+								src="assets/projects/battleCyth.JPG"
+								alt="screenshot of battle cynthia project"
+							/>
+							<div class="project-info">
+								<h3>Battle Cynthia</h3>
+								<p>
+									A react + spring boot app that let's users build a team and
+									battle an iconic video game character.
+								</p>
+								<div class="project-links">
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://www.youtube.com/watch?v=tLkII4gRKU8"
+										class="btn"
+										>Youtube video</a
+									>
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://github.com/AlexKosz/pokebattlesim"
+										class="btn"
+										>Code</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="project-card">
+							<img
+								src="assets/projects/bugTracker.jpg"
+								alt="screenshot of bug tracker project"
+							/>
+							<div class="project-info">
+								<h3>Bug Tracker</h3>
+								<p>A MERN bug tracker</p>
+								<div class="project-links">
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://github.com/AlexKosz/bugTracker2.0"
+										class="btn"
+										>View Code</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section
+				id="contact"
+				class="contact section"
+			>
+				<div class="container">
+					<h2 class="section-title">Get In Touch</h2>
+					<div class="contact-content">
+						<div class="contact-info">
+							<p>
+								I'm currently available for freelance work or full-time
+								positions. If you have a project you'd like to discuss, feel
+								free to reach out!
+							</p>
+							<ul class="contact-links">
+								<li>
+									<a href="mailto:alexander@koszuta.dev">
+										<i class="fas fa-envelope"></i> alexander@koszuta.dev
+									</a>
+								</li>
+								<li>
+									<a href="tel:+17163457666">
+										<i class="fas fa-phone"></i> (716) 345-7666
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://github.com/AlexKosz"
+										target="_blank"
+									>
+										<i class="fab fa-github"></i> github.com/AlexKosz
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/in/Alex-Koszuta-z43/"
+										target="_blank"
+									>
+										<i class="fab fa-linkedin"></i>
+										linkedin.com/in/Alex-Koszuta-z43
+									</a>
+								</li>
 							</ul>
 						</div>
+						<form
+							id="contactForm"
+							class="contact-form"
+							action="https://formspree.io/f/myzwpjav"
+							method="POST"
+						>
+							<div class="form-group">
+								<input
+									type="text"
+									name="name"
+									placeholder="Your Name"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="email"
+									name="email"
+									placeholder="Your Email"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="text"
+									name="subject"
+									placeholder="Subject"
+								/>
+							</div>
+							<div class="form-group">
+								<textarea
+									name="message"
+									placeholder="Your Message"
+									required
+								></textarea>
+							</div>
+							<button
+								type="submit"
+								class="btn"
+							>
+								Send Message
+							</button>
+						</form>
 					</div>
 				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p>
+					&copy; <span id="year"></span> Alexander Koszuta. All rights reserved.
+				</p>
+				<ul class="social-links">
+					<li>
+						<a
+							href="https://github.com/AlexKosz"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="fab fa-github"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/alex-koszuta-z43/"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="fab fa-linkedin"></i
+						></a>
+					</li>
+				</ul>
 			</div>
-		</div>
-	</section>
+		</footer>
 
-	<section id="projects" class="projects-section pad-tb bg-gradient-3 position-relative">
-		<div class="container">
-			<h2 class="common-heading text-center">Cool Stuff I've Built</h2>
-			<h4 class="header-subtitle">Hover over a project (or tap on mobile) to see what I made each
-				project with and to see the code.</h4>
+		<!-- JavaScript -->
+		<script defer>
+			// Update year in footer
+			document.getElementById("year").textContent = new Date().getFullYear();
 
-			<div class="row">
-				<div class="col-lg-6 mt-60">
+			// Mobile menu toggle functionality
+			const hamburger = document.querySelector(".hamburger");
+			const navLinks = document.querySelector(".nav-links");
 
-					<div class="isotope-item">
+			hamburger.addEventListener("click", () => {
+				hamburger.classList.toggle("active");
+				navLinks.classList.toggle("active");
+			});
 
-						<div class="item-image">
-							<img loading="lazy" src="./src/img/Projects/BugTracker.JPG" class="img-fluid"
-								alt="project image" />
+			// Close mobile menu when clicking a link
+			document.querySelectorAll(".nav-links a").forEach((link) => {
+				link.addEventListener("click", () => {
+					hamburger.classList.remove("active");
+					navLinks.classList.remove("active");
+				});
+			});
 
-							<div class="item-overlay">
-								<ul class="item-overlay-list">
-									<li class="io-list-item">HTML/CSS/Bootstrap</li>
-									<li class="io-list-item">React</li>
-									<li class="io-list-item">Node/Express</li>
-									<li class="io-list-item">MongoDB</li>
+			// Smooth scrolling for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+					document.querySelector(this.getAttribute("href")).scrollIntoView({
+						behavior: "smooth",
+					});
+				});
+			});
 
-								</ul>
+			// Form submission handling
+			const contactForm = document.getElementById("contactForm");
 
-								<div class="item-btn-grid">
-									<a href="https://pacific-everglades-12315.herokuapp.com/" class="item-btn"
-										target="_blank">
-										View Project <i class="fas fa-arrow-circle-right"></i>
-									</a>
-									<a href="https://github.com/AlexKosz/bugTracker2.0" class="item-btn"
-										target="_blank">
-										View Code <i class="fab fa-github"></i></a>
-								</div>
-							</div>
-						</div>
+			contactForm.addEventListener("submit", async function (e) {
+				e.preventDefault();
 
-						<div class="item-info">
-							<h4>Bug Tracker</h4>
-							<p>Keep track of all the bugs in your projects</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 mt-60">
+				const submitBtn = this.querySelector('button[type="submit"]');
+				const originalText = submitBtn.textContent;
 
-					<div class="isotope-item">
+				submitBtn.disabled = true;
+				submitBtn.textContent = "Sending...";
 
-						<div class="item-image">
-							<img loading="lazy" src="./src/img/Projects/battleCyth.JPG" class="img-fluid"
-								alt="project image" />
+				try {
+					const formData = new FormData(this);
+					const response = await fetch(this.action, {
+						method: "POST",
+						body: formData,
+						headers: {
+							Accept: "application/json",
+						},
+					});
 
-							<div class="item-overlay">
-								<ul class="item-overlay-list">
-									<li class="io-list-item">HTML/CSS</li>
-									<li class="io-list-item">JavaScript (React)</li>
-									<li class="io-list-item">Java (Spring Boot)</li>
-									<li class="io-list-item">SQL</li>
-								</ul>
-
-								<div class="item-btn-grid">
-									<a href="https://www.youtube.com/watch?v=tLkII4gRKU8" class="item-btn"
-										target="_blank">
-										Video Demo <i class="fas fa-arrow-circle-right"></i>
-									</a>
-									<a href="https://github.com/AlexKosz/pokebattlesim" class="item-btn"
-										target="_blank">
-										View Code <i class="fab fa-github"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-info">
-							<h4>Battle Cynthia</h4>
-							<p>A pokemon team builder and battle simulator versus an iconic character</p>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="col-lg-6 mt-60">
-
-						<div class="isotope-item">
-
-							<div class="item-image">
-								<img loading="lazy" src="./src/img/Projects/movie.JPG" class="img-fluid"
-									alt="project image" />
-
-								<div class="item-overlay">
-									<ul class="item-overlay-list">
-										<li class="io-list-item">HTML</li>
-										<li class="io-list-item">CSS</li>
-										<li class="io-list-item">React</li>
-										<li class="io-list-item">A public movie API</li>
-									</ul>
-
-									<div class="item-btn-grid">
-										<a href="https://alexkosz.github.io/movieapp/" class="item-btn" target="_blank">
-											View Project <i class="fas fa-arrow-circle-right"></i>
-										</a>
-										<a href="https://github.com/AlexKosz/movieapp" class="item-btn" target="_blank">
-											View Code <i class="fab fa-github"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item-info">
-								<h4>Movie Night</h4>
-								<p>View movie posters and descriptions</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 mt-60">
-
-						<!-- <div class="isotope-item">
-
-							<div class="item-image">
-								<img loading="lazy" src="./src/img/Projects/battleCyth.JPG" class="img-fluid"
-									alt="project image" />
-
-								<div class="item-overlay">
-									<p class="item-overlay-desc">
-										Battle versus an iconic character!
-									</p>
-									<p class="item-overlay-tech">Built With:</p>
-									<ul class="item-overlay-list">
-										<li class="io-list-item">HTML/CSS</li>
-										<li class="io-list-item">JavaScript (React)</li>
-										<li class="io-list-item">Java (Spring Boot)</li>
-										<li class="io-list-item">SQL</li>
-									</ul>
-
-									<div class="item-btn-grid">
-										<a href="https://www.youtube.com/watch?v=tLkII4gRKU8" class="item-btn"
-											target="_blank">
-											Video Demo <i class="fas fa-arrow-circle-right"></i>
-										</a>
-										<a href="https://github.com/AlexKosz/pokebattlesim" class="item-btn"
-											target="_blank">
-											View Code <i class="fab fa-github"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item-info">
-								<h4>Battle Cynthia</h4>
-								<p>A pokemon team builder and battle simulator</p>
-							</div>
-						</div> -->
-					</div>
-
-
-
-
-
-
-
-				</div>
-	</section>
-
-
-	<footer id="contact" class="">
-		<div class="container-fluid">
-			<div class="row text-center">
-				<div class="footer-contact">
-					<h3 class="common-heading">I'm always looking for new opportunites, so don't hesitate to reach out!
-					</h3>
-					<p class="mt-35">
-						You can shoot me an email me at:
-						<a href="mailto:alexkoszuta43@gmail.com" class="footer-contact-link">alexkoszuta43@gmail.com</a>
-						, or you can message me on <a href="https://www.linkedin.com/in/alex-koszuta-z43/"
-							target="_blank" class="footer-contact-link">LinkedIn</a>
-					</p>
-				</div>
-
-				<div class="footer-social">
-					<div class="links mt-10">
-
-						<a href="https://github.com/AlexKosz" target="_blank"><i class="fab fa-github"></i></a>
-						<a href="https://www.linkedin.com/in/alex-koszuta-z43/" target="_blank"><i
-								class="fab fa-linkedin"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-</body>
-
-<script src="./src/js/main.js"></script>
-
+					if (response.ok) {
+						alert("Message sent successfully!");
+						this.reset();
+					} else {
+						const data = await response.json();
+						throw new Error(data.error || "Failed to send message");
+					}
+				} catch (error) {
+					alert("Error: " + error.message);
+				} finally {
+					submitBtn.disabled = false;
+					submitBtn.textContent = originalText;
+				}
+			});
+		</script>
+	</body>
 </html>
